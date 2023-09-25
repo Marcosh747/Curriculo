@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="/css/style.css" />
+
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Marcos Henrique</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#Sobre">Sobre</a></li>
+                <li><a href="#habilidades">Experiência</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Marcos Henrique</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#Sobre" onclick="toggleMenu()">Sobre</a></li>
+                <li><a href="#habilidades" onclick="toggleMenu()">Experiência</a></li>
+                <li><a href="#projetos" onclick="toggleMenu()">Projetos</a></li>
+                <li><a href="#contato" onclick="toggleMenu()">Contato</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <section id="profile">
+            <div class="section__pic-container">
+                <img class="perfil-img" src="/img/DB02B4FD-2922-4CD3-B85C-AC74537D89FA~5.jpg"
+                    alt="Foto de perfil de Marcos Henrique" />
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1">Olá, eu sou</p>
+                <h1 class="title">Marcos Henrique</h1>
+                <p class="section__text__p2">Técnico Em Eletromecânica</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+                        Baixar CV
+                    </button>
+                    <button class="btn btn-color-1" onclick="location.href='./#contato'">
+                        Informações de Contato
+                    </button>
+                </div>
+                <div id="socials-container">
+
+                    <img src="/img/174857.png" class="icon"
+                        onclick="location.href='https:www.linkedin.com/in/marcosh747/'" alt="Meu perfil no LinkedIn" />
+
+                </div>
+            </div>
+        </section>
+
+        <section id="Sobre">
+
+            <div class="descricao">
+                <p class="section__text__p1">Saiba Mais</p>
+
+                <h2 class="title">Sobre Mim</h2>
+            </div>
+
+
+            <div class="section-container">
+
+                <div class="about-details-container">
+
+                    <div class="about-containers">
+
+                        <div class="details-container">
+                            <h3>Experiência</h3>
+                            <p>2 anos<br />Kromberg & Schubert | Manutenção </p>
+                        </div>
+
+                        <div class="details-container">
+                            <h3>Educação</h3>
+                            <p>Ensino Médio<br />Técnico Em Eletromecânica <br /> Técnico Em Administração</p>
+                        </div>
+
+                    </div>
+
+                    <div class="text-container">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+                            omnis sapiente hic odio quod voluptates alias nobis excepturi
+                            perspiciatis natus voluptatem exercitationem voluptas quibusdam
+                            deserunt impedit libero rerum adipisci, quos nisi velit sunt!
+                            Quibusdam magni laborum perspiciatis, eaque quos nobis?
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="habilidades">
+
+            <div class="descricao">
+                <p class="section__text__p1">Explore Minhas</p>
+
+                <h2 class="title">Habilidades</h2>
+            </div>
+
+
+            <div class="experience-details-container">
+
+                <div class="about-containers">
+
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Desenvolvimento Frontend</h2>
+                        <div class="article-container">
+
+                            <article>
+
+                                <img class="icon" src="/img/html5-logo.png" alt="Ícone de Experiência" />
+                                <div>
+                                    <h3>HTML</h3>
+                                    <p>Intermediário</p>
+                                </div>
+
+                            </article>
+
+                            <article>
+
+                                <img class="icon" src="/img/css-3-logo-1.png" alt="Ícone de Experiência" />
+                                <div>
+                                    <h3>CSS</h3>
+                                    <p>Intermediário</p>
+                                </div>
+
+                            </article>
+
+                            <article>
+
+                                <div>
+                                    <h3>Material UI</h3>
+                                    <p>Intermediário</p>
+                                </div>
+
+                            </article>
+
+                            <article>
+
+                                <div>
+                                    <h3>Java Script</h3>
+                                    <p>Basico</p>
+                                </div>
+
+                            </article>
+
+                        </div>
+
+                    </div>
+
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Outros</h2>
+
+                        <div class="article-container">
+                            <article>
+
+                                <div>
+                                    <h3>Circuito elétrico</h3>
+                                    <p>Experiente</p>
+                                </div>
+
+                            </article>
+
+
+                            <article>
+
+                                <img class="icon"
+                                    src="/img/png-clipart-microsoft-sql-server-computer-icons-database-sql-s-blue-logo.png"
+                                    alt="Ícone de Experiência" />
+                                <div>
+                                    <h3>Banco de dados</h3>
+                                    <p>Básico</p>
+                                </div>
+
+                            </article>
+
+                           
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="contato">
+
+            <h2 class="title">Contato</h2>
+
+            <div class="contact-info-upper-container">
+
+                <div class="contact-info-container">
+
+                    <img src="/img/281769.png" alt="Email icon" class="icon contact-icon email-icon" />
+                    <p><a href="mailto:examplemail@gmail.com">EmailAleatório@gmail.com</a></p>
+
+                </div>
+
+                <div class="contact-info-container">
+
+                    <img src="/img/174857.png" alt="LinkedIn icon" class="icon contact-icon" />
+                    <p><a href="https:www.linkedin.com/in/marcosh747/">LinkedIn</a></p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="projetos">
+
+            <h2 class="title">Projetos</h2>
+
+
+            <div class="details-container color-container">
+
+                <div class="article-container">
+                    <img src="/img/Captura de tela 2023-09-24 203227.png" alt="Project 1" class="project-img" />
+                </div>
+
+                <h2 class="experience-sub-title project-title">Dewey</h2>
+
+                <div class="btn-container">
+
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='http://interact.app.br/'">
+                        Acessar Teste
+                    </button>
+
+                </div>
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+
+                <ul class="nav-links">
+                    <li><a href="#Sobre">Sobre</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </footer>
+
+</body>
