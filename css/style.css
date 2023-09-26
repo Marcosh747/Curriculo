@@ -26,7 +26,7 @@ a,
 /* DESKTOP NAV */
 
 nav,
-.nav-links {
+.LinksdeNavegacao {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -38,7 +38,7 @@ nav {
   align-items: center;
 }
 
-.nav-links {
+.LinksdeNavegacao {
   gap: 2rem;
   list-style: none;
   font-size: 1.5rem;
@@ -88,9 +88,9 @@ section {
   gap: 4rem;
 }
 
-/* PROFILE SECTION */
+/* perfil SECTION */
 
-#profile {
+#perfil {
   display: flex;
   justify-content: center;
   gap: 5rem;
@@ -239,7 +239,7 @@ section {
 
 
 
-.section__pic-container {
+.contêinerPerfil {
   display: flex;
   align-items: center;
   justify-content: center;
