@@ -99,16 +99,16 @@ section {
   display: flex;
   flex-direction: column;
 }
-.section__text {
+.textodaSeacao {
   align-self: center;
   text-align: center;
 }
 
-.section__text p {
+.textodaSeacao p {
   font-weight: 600;
 }
 
-.section__text__p1 {
+.Parágrafo_1_daSeacao {
   text-align: center;
 }
 
@@ -248,7 +248,7 @@ section {
 }
 
 
-img.perfil-img {
+img.ImagemdoPerfil {
   position: relative;
   width: 240px;
   height: 240px;
