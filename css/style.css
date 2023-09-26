@@ -3,16 +3,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 
-body {
+body * {
   font-family: "Poppins", sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
-}
 
 p, span {
   color: rgb(85, 85, 85);
+}
+
+h2,h3 ,p {
+  margin: 0;
 }
 
 /* TRANSITIONS */
@@ -78,9 +79,7 @@ section {
   align-items: center;
 }
 
-h2,h3 ,p {
-  margin: 0;
-}
+
 
 .section-container {
   display: flex;
@@ -363,7 +362,6 @@ article .icon {
 /* FOOTER SECTION */
 
 footer {
-
   margin: 0 1rem;
 }
 
