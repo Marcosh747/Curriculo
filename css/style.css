@@ -3,16 +3,54 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 
+@media (max-width: 1000px) {
+  .conteinerNavegacao {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 65px;
+    right: 20px;
+    padding: 5px;
+    background-color: rgb(53, 53, 53);
+    border-radius: 12px;
+    padding: 30px;
+  }
+
+  .linksNavegacaoUp li a {
+    color: #fff;
+  }
+
+  .linksNavegacaoUp {
+    flex-direction: column;
+
+    align-content: flex-end;
+  }
+
+  .conteinerBotao{
+    display: flex;
+  }
+}
+
+@media (min-width: 1000px) {
+  .conteinerBotao{
+    display: none;
+  }
+}
+
+
 body * {
   font-family: "Poppins", sans-serif;
 }
 
 
-p, span {
+p,
+span {
   color: rgb(85, 85, 85);
 }
 
-h2,h3 ,p {
+h2,
+h3,
+p {
   margin: 0;
 }
 
@@ -26,7 +64,7 @@ a,
 /* DESKTOP NAV */
 
 nav,
-.linksNavegacao {
+.linksNavegacao, .linksNavegacaoUp {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -38,7 +76,7 @@ nav {
   align-items: center;
 }
 
-.linksNavegacao {
+.linksNavegacao, .linksNavegacaoUp {
   gap: 2rem;
   list-style: none;
   font-size: 1.5rem;
@@ -52,7 +90,6 @@ a {
 
 a:hover {
   color: grey;
-  text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: rgb(181, 181, 181);
 }
@@ -64,6 +101,8 @@ a:hover {
 .logo:hover {
   cursor: default;
 }
+
+
 
 
 /* SECTIONS */
@@ -95,10 +134,12 @@ section {
   justify-content: center;
   gap: 5rem;
 }
-.descricao{
+
+.descricao {
   display: flex;
   flex-direction: column;
 }
+
 .textodaSeacao {
   align-self: center;
   text-align: center;
@@ -108,7 +149,7 @@ section {
   font-weight: 600;
 }
 
-.Parágrafo_1_daSeacao {
+.paragrafo_1_daSecao {
   text-align: center;
 }
 
@@ -133,9 +174,27 @@ section {
 /* BUTTONS */
 
 .conteinerBotao {
-  display: flex;
+
+  border-radius: 100px;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
   justify-content: center;
-  gap: 1rem;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+  border-color: var(--m-3-sys-dark-on-surface-variant);
+}
+
+.botoes {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  border-radius: 50%;
 }
 
 
@@ -190,7 +249,7 @@ section {
 .ConteinerDetalhesSobre {
   justify-content: center;
   flex-direction: column;
-  
+
 }
 
 .about-containers,
@@ -212,7 +271,7 @@ section {
 
   position: relative;
   width: 240px;
- 
+
   transition: 0.5s;
   object-fit: cover;
   border-radius: 28px;
@@ -328,7 +387,7 @@ article .icon {
 }
 
 /* CONTACT SECTION */
-#contato{
+#contato {
   flex-direction: column;
 }
 
@@ -364,4 +423,3 @@ article .icon {
 footer {
   margin: 0 1rem;
 }
-

@@ -7,6 +7,8 @@
     <title>Currículo</title>
     <link rel="stylesheet" href="/css/style.css" />
 
+    <script src="/js/main.js"></script>
+
 </head>
 
 <body>
@@ -14,8 +16,24 @@
     <header>
         <nav>
             <div class="logo">Marcos Henrique</div>
-            <div>
-                <ul class="linksNavegacao">
+
+            <div class="conteinerBotao">
+
+                <button class="botoes" id="menu" onclick="menu()">
+                    <svg class="icones-menu-24-px" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M3 8V6H21V8H3ZM3 13H21V11H3V13ZM3 18H21V16H3V18Z" fill="#45483D"></path>
+                    </svg>
+                </button>
+
+            </div>
+
+
+
+            <div class="conteinerNavegacao">
+
+                <ul class="linksNavegacaoUp">
                     <li><a href="#Sobre">Sobre</a></li>
                     <li><a href="#habilidades">Experiência</a></li>
                     <li><a href="#projetos">Projetos</a></li>
@@ -36,15 +54,18 @@
 
             <div class="textodaSeacao">
 
-                <p class="Parágrafo_1_daSeacao">Olá, eu sou</p>
+                <p class="paragrafo_1_daSecao">Olá, eu sou</p>
                 <h1 class="titulo">Marcos Henrique</h1>
                 <p class="section__text__p2">Técnico Em Eletromecânica</p>
 
                 <div class="conteinerBotao">
 
-                    <button class="botao btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
-                        Baixar CV
-                    </button>
+                    <a class="botao btn-color-2"
+                        href="https://docs.google.com/document/d/17nRAQX0upuYKZAWtogH07FO-WsPPdglLCIZRlSz7ppk/edit?usp=sharing"
+                        download="Marcos Henrique Silva Santos | Currículo">
+                        Acessar Currículo
+                    </a>
+
 
                     <button class="botao btn-color-1" onclick="location.href='./#contato'">
                         Informações de Contato
@@ -65,7 +86,7 @@
 
             <div class="descricao">
 
-                <p class="Parágrafo_1_daSeacao">Saiba Mais</p>
+                <p class="paragrafo_1_daSecao">Saiba Mais</p>
                 <h2 class="titulo">Sobre Mim</h2>
 
             </div>
@@ -95,11 +116,21 @@
 
                     <div>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-                            omnis sapiente hic odio quod voluptates alias nobis excepturi
-                            perspiciatis natus voluptatem exercitationem voluptas quibusdam
-                            deserunt impedit libero rerum adipisci, quos nisi velit sunt!
-                            Quibusdam magni laborum perspiciatis, eaque quos nobis?
+                            Sou um profissional com 2 anos de experiência na área de manutenção, com especialização em
+                            eletromecânica. Meu background inclui formação técnica em Eletromecânica e Administração, o
+                            que me proporcionou uma base sólida em habilidades técnicas e de gestão.
+                            <br>
+                            <br>
+                            Tenho conhecimento intermediário em desenvolvimento frontend, com habilidades em HTML e CSS,
+                            que me permitem criar interfaces de usuário atraentes e funcionais. Além disso, estou
+                            familiarizado com a biblioteca Material UI, o que me permite criar designs ainda mais
+                            refinados.
+                            <br>
+                            <br>
+                            Apesar de minha experiência básica em JavaScript, estou em constante aprendizado e
+                            aprimoramento nessa linguagem, visando me tornar um desenvolvedor frontend mais completo.
+                            Também tenho conhecimento em circuitos elétricos, o que complementa minha formação
+                            eletromecânica.
                         </p>
                     </div>
 
@@ -113,7 +144,7 @@
 
             <div class="descricao">
 
-                <p class="Parágrafo_1_daSeacao">Explore Minhas</p>
+                <p class="paragrafo_1_daSecao">Explore Minhas</p>
                 <h2 class="titulo">Habilidades</h2>
 
             </div>
