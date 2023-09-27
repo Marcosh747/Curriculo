@@ -26,13 +26,13 @@
     align-content: flex-end;
   }
 
-  .conteinerBotao{
+  #menu{
     display: flex;
   }
 }
 
 @media (min-width: 1000px) {
-  .conteinerBotao{
+  #menu{
     display: none;
   }
 }
@@ -174,11 +174,11 @@ section {
 /* BUTTONS */
 
 .conteinerBotao {
-
+  display: flex;
+  
   border-radius: 100px;
   flex-direction: row;
   gap: 10px;
-  align-items: center;
   justify-content: center;
   flex-shrink: 0;
   position: relative;
